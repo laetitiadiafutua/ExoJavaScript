@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: beige;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid brown;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: burlywood;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background: peru;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+li .task-checkbox {
+    margin-right: 10px;
+}
+
+li .task-text {
+    flex-grow: 1;
+}
+
+li .task-delete {
+    color: #501f24;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li .task-delete:hover {
+    color: rgb(51, 12, 12);
+}
+
+li.completed .task-text {
+    color: purple;
+}
