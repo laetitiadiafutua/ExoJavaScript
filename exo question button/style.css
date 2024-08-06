@@ -1,0 +1,11 @@
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+.answer {
+    display: none; /* Les réponses sont cachées masquées */
+}
+button {
+    margin-top: 10px;
+}

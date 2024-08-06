@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 20px; /* Marge de la page */
+}
+
+h1 {
+    color:brown; /* Couleur du titre */
+}
+
+ul {
+    padding-left: 20px; /* Espace à gauche de la liste */
+    color:brown; /* Couleur du texte  */
+}
+
+li {
+    margin: 5px 0; /* Espace entre les éléments de la liste */
+    color:brown; /* Couleur du texte */
+}
+
+button {
+    margin: 10px 5px; /* Espace autour des boutons */
+    padding: 10px 15px; /* Taille des boutons */
+    font-size: 16px; /* Taille du texte dans les boutons */
+    cursor: pointer; /* Change le curseur au survol des boutons */
+    color:brown; /* Couleur du texte */
+    border-radius: 15%; /* Arrondit les bordures */
+}
+
+button:hover {
+    background-color:burlywood; /* Change la couleur de fond au survol */
+    border-radius: 15%;
+    border: brown;
+}
