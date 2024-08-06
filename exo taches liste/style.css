@@ -64,6 +64,6 @@ li {
 
 li:hover {
     background: #fab2b2; /* Couleur de fond au survol */
-    text-decoration: line-through; /* Texte barré au survol */
+    /* text-decoration: line-through; Texte barré au survol */
 }
 
