@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+section {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    opacity: 0; /* Initialement invisible */
+    transform: translateY(20px); /* Déplacement initial vers le bas */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Animation de transition */
+}
+
+/* Déclencher l'animation */
+.fade-in {
+    opacity: 1; /* Devenir visible */
+    transform: translateY(0); /* Revenir à la position initiale */
+}
+
+/* Couleurs de fond pour chaque section */
+.section1 {
+    background-color: #cd6b6b; 
+}
+
+.section2 {
+    background-color:#adadeb ; 
+}
+
+.section3 {
+    background-color: #8cd68c; 
+}
+
+.section4 {
+    background-color: #b0b04d; 
+}
+

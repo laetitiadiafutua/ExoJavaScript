@@ -1,0 +1,69 @@
+/* Marges, espacements et box-sizing pour tous les éléments */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police de caractères pour le texte */
+    display: flex; /* Flexbox pour centrer le contenu */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Hauteur de la fenêtre d'affichage */
+    background-color: burlywood; /* Couleur de fond de la page */
+}
+
+/* Styles pour le conteneur du diaporama */
+.slideshow-container {
+    position: relative; /* Conteneur positionné pour que les éléments internes soient positionnés par rapport à lui */
+    width: 700px; /* Largeur fixe en pixels */
+    height: 500px; /* Hauteur fixe en pixels */
+    overflow: hidden; /* Masquer le contenu qui dépasse les dimensions du conteneur */
+    border: 1px solid brown; /* Bordure autour du conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    display: flex; /* Flexbox pour le placement des éléments enfants */
+    justify-content: space-between; /* Espacement entre les éléments enfants */
+    align-items: center; /* Alignement vertical des éléments enfants */
+    background-color: bisque; /* Couleur de fond du conteneur du diaporama */
+}
+
+/* Styles pour chaque diapositive */
+.slide {
+    width: 100%; /* Occuper toute la largeur du conteneur */
+    height: 100%; /* Occuper toute la hauteur du conteneur */
+    object-fit: cover; /* Couvrir le conteneur tout en maintenant les proportions de l'image */
+    position: absolute; /* Positionner absolument pour superposer les diapositives */
+    top: 0; /* Aligner en haut du conteneur */
+    left: 0; /* Aligner à gauche du conteneur */
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente pour le bouton */
+    color: beige; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure pour le bouton */
+    padding: 10px 20px; /* Espacement intérieur fixe */
+    cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
+    z-index: 1; /* Assurer que les boutons sont au-dessus des diapositives */
+    transition: background-color 0.5s; /* Transition en douceur pour le changement de couleur de fond */
+}
+
+/* Styles pour le survol des boutons */
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond plus foncée au survol */
+}
+
+/* Positionnement du bouton "Précédent" */
+.prev {
+    position: absolute; /* Positionner absolument par rapport au conteneur du diaporama */
+    left: 10px; /* Distance depuis le bord gauche du conteneur */
+}
+
+/* Positionnement du bouton "Suivant" */
+.next {
+    position: absolute; /* Positionner absolument par rapport au conteneur du diaporama */
+    right: 10px; /* Distance depuis le bord droit du conteneur */
+}
+

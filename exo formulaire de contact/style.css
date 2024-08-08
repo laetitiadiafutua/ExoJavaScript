@@ -1,0 +1,61 @@
+* {
+    padding: 0; /* Supprime le padding par défaut de tous les éléments */
+    margin: 0;  /* Supprime la marge par défaut de tous les éléments */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans les dimensions des éléments */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Définit la police */
+    background-color: wheat; /* Définit la couleur de fond du corps */
+    margin: 0; /* Supprime la marge du corps */
+    padding: 0; /* Supprime le padding du corps */
+    display: flex; /* Flexbox pour aligner les éléments enfants */
+    justify-content: center; /* Centre horizontalement le contenu de la page */
+    align-items: center; /* Centre verticalement le contenu de la page */
+    height: 100vh; /* Définit la hauteur du corps à 100% de la hauteur de la fenêtre */
+}
+
+.container {
+    background-color: bisque; /* Définit la couleur de fond du conteneur */
+    padding: 20px; /* Ajoute un padding de 20px à l'intérieur du conteneur */
+    border-radius: 10px; /* Arrondit les coins du conteneur avec un rayon de 10px */
+    box-shadow: 0px 0px 15px brown; /* Ajoute une ombre autour du conteneur avec une couleur*/
+}
+
+h2 {
+    margin-bottom: 20px; /* Ajoute une marge inférieure de 20px sous le titre h2 */
+}
+
+form {
+    display: flex; /* Flexbox pour les éléments du formulaire */
+    flex-direction: column; /* Aligne les éléments du formulaire en colonne (verticalement) */
+}
+
+label {
+    margin-bottom: 5px; /* Marge inférieure de 5px sous chaque label */
+    font-weight: bold; /* Définit le texte en gras */
+}
+
+input, textarea, button {
+    margin-bottom: 15px; /* Marge inférieure de 15px sous chaque input, textarea, et bouton */
+    padding: 10px; /* Ajoute un padding de 10px à l'intérieur de ces éléments */
+    border-radius: 5px; /* Arrondit les coins de ces éléments de 5px */
+    border: 1px solid brown; /* Définit une bordure de 1px avec une couleur */
+}
+
+button {
+    background-color: burlywood; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton à blanc */
+    cursor: pointer; /* Change le curseur en pointeur (main) lors du survol du bouton */
+    border: none; /* Supprime la bordure par défaut du bouton */
+    transition: background-color 0.3s; /* Transition de 0,3 seconde pour le changement de couleur de fond */
+}
+
+button:hover {
+    background-color: brown; /* Change la couleur de fond du bouton lors du survol */
+}
+
+#errorMessage {
+    color: red; /* Couleur du texte du message d'erreur à rouge */
+    font-weight: bold; /* Texte du message d'erreur en gras */
+}
